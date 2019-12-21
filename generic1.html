@@ -2,7 +2,7 @@
 
 <html>
 	<head>
-		<title>bitsPlease</title>
+		<title>Innova</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -30,8 +30,28 @@
 						<div class="inner">
 							<h1 class="major">Dynamic Traffic Management System</h1>
 							<span class="image fit"><img src="images/sol-gen.jpg" alt="" /></span>
-							<p>These systems cannot dynamically adjust traffic light timing in response to unexpected situations such as traffic accidents, natural calamities, or sudden incidents. With advances in technology, traffic data such as traffic volume, speed, and waiting time can now be gathered by sensors or cameras. Leveraging on automatic traffic data collection we try to address the traffic congestion issue by proposing a novel Model Predictive Control (MPC)-based Traffic Light Control System (MTLCS). </p>
-							<p> MTLCS includes a traffic flow prediction model and a traffic timing optimization method. Historical traffic data is used to predict future traffic volumes. An MPC-based traffic light optimization method is proposed to obtain appropriate time settings that can reduce overall congestion. Our method also has the ability to dynamically adjust traffic signal timings. It can rapidly respond to real-time traffic conditions to reduce traffic congestion. Experiments show that the Mean Absolute Percentage Error (MAPE) of our traffic flow prediction model is less than <b>12%</b>. Using the proposed MPC-based optimization method, the average waiting rate is reduced by <b>29.70%</b>, when compared with the fixed-time traffic light control system.</p>
+							<p>Existing systems cannot dynamically adjust traffic light timing in response to real time traffic, unexpected situations such as traffic accidents,
+								natural calamities, or sudden incidents. With advances in technology, traffic data such as traffic volume, speed, and waiting
+								time can now be gathered by cameras. </p>
+
+
+<p>
+
+We aim to collect traffic data though image processing for which we aim to use <b>Microsoft's Azure Computer Vision</b>
+The image will be recieved already existing cameras installed on traffic lights.
+After collecting this data, we run our scheduling algorithm to change the duration of lights.
+
+The algorithm will take into account, the number of cars in a particular lane and dynamically change the traffic light duration.
+Also this algorithm with take into account emergency vehicles and let them pass first by allowing the traffic in that particular
+lane to go.
+
+This solves the main problem of time wastage and saves fuel, since there is efficient traffic control.
+
+
+</p>
+
+
+
 						</div>
 					</section>
 
@@ -41,7 +61,7 @@
 			<footer id="footer" class="wrapper alt">
 				<div class="inner">
 					<ul class="menu">
-						<li>&copy; All rights reserved.</li><li>Design: bitsPlease</li>
+						<li>&copy; All rights reserved.</li><li>Design: Innova</li>
 					</ul>
 				</div>
 			</footer>
